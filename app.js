@@ -17,7 +17,7 @@ app.post('/send-sms', (req, res) => {
     const url = 'https://api.vaspro.co.ke/v3/BulkSMS/api/create';
 
     const data = {
-        "apiKey": process.env.API_KEY || "2c903209817b8098182eab4a5b905c4c",
+        "apiKey": process.env.API_KEY,
         "shortCode": "VasPro",
         "message": message,
         "recipient": phoneNumber,
