@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMS</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000/send-sms" method="POST">
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+        <label for="message">message:</label>
+        <input type="text" id="message" name="message" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
